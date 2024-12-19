@@ -1,13 +1,17 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProjectProps {
-  image?: string | any;
+  image?: string | StaticImageData;
 }
 
 export function Project({ image }: ProjectProps) {
   return (
     <div className="">
-      <Image className="object-cover" src={image} alt="velgo project pic" />
+      <Image
+        className="object-cover"
+        src={image || ""}
+        alt="velgo project pic"
+      />
     </div>
   );
 }

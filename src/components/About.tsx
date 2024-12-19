@@ -1,13 +1,11 @@
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
   IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
   IconTableColumn,
   IconLink,
 } from "@tabler/icons-react";
 import WordFadeIn from "./ui/word-fade-in";
-import { OrbitingCirclesDemo } from "./OrbitingcircleDemo";
+
 import BlurIn from "./ui/blur-in";
 import { ScrollBasedVelocityDemo } from "./ui/ScrollBasedVelocity";
 import { CardStackDemo } from "./ui/CardStackDemo";
@@ -15,10 +13,9 @@ import { Project } from "./ui/Project";
 import WebPro from "../../assets/WebPro.png";
 import Velgo from "../../assets/Velgo.png";
 import Medium from "../../assets/Medium.png";
-import { div } from "framer-motion/client";
+
 import { MarqueeDemo } from "./ui/MarqueeDemo";
 export function About() {
-  let counter = 0;
   const items = [
     {
       key: 1,
@@ -123,7 +120,7 @@ export function About() {
           <a href="https://github.com/Abdul-Azeez060/Medium-Serverless">
             {Icons.gitHub()}
           </a>
-          <span className="px-1">WebPro, AI website maker</span>
+          <span className="px-1">Medium, Serverless backend</span>
         </span>
       ),
     },

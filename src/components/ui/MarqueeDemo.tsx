@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import Marquee from "./marquee";
 import { Icons } from "../OrbitingcircleDemo";
-import { ReactNode } from "react";
 
 const reviews = [
   {
@@ -91,16 +90,11 @@ const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
-  img,
   name,
-  username,
-  body,
+
   icon,
 }: {
-  img: string;
   name: string;
-  username?: string;
-  body?: string;
   icon?: React.ReactElement;
 }) => {
   return (

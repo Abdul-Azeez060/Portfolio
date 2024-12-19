@@ -20,7 +20,6 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        //@ts-ignore
         className=" text-sm px-4 md:text-2xl lg:text-2xl font-bold text-neutral-600 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto flex flex-col justify-center items-center ">
         <div className="p-2">
           <Image
@@ -38,10 +37,10 @@ export function HeroHighlightDemo() {
             is good <br />
           </Highlight>
           <div className="p-4">
-            If they don't
+            If they don&apos;t
             <Highlight className="text-black dark:text-white from-green-200 to-green-400 text-xl md:text-3xl lg:text-5xl lg:m-2 m-2 delay-75 duration-700 shadow-lg px-1 md:px-2">
               {" "}
-              it's even better
+              it&apos;s even better
             </Highlight>
           </div>
         </div>

@@ -14,7 +14,6 @@ export default function Home() {
         <About />
       </div>
       <div className="">
-        <h1>footer</h1>
         <FloatingDockDemo />
       </div>
     </div>

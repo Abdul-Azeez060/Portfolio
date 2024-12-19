@@ -1,9 +1,7 @@
 import { VelocityScroll } from "./scroll-based-velocity";
-import { Icons } from "../OrbitingcircleDemo";
 
 export function ScrollBasedVelocityDemo() {
   return (
-    //@ts-ignore
     <VelocityScroll
       text="000110011000100"
       default_velocity={10}

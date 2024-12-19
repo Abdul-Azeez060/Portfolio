@@ -3,9 +3,7 @@ import { FloatingDock } from "./floating-dock";
 import {
   IconBrandGithub,
   IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
   IconBrandLinkedin,
   IconBallpen,
 } from "@tabler/icons-react";
