@@ -55,7 +55,7 @@ export function About() {
       className: " md:col-span-8",
       icon: (
         <span className="flex">
-          <a href="https://web.abdulazeez.xyz" className="px-1">
+          <a href="https://web-pro-bwf1.vercel.app/" className="px-1">
             <IconLink />
           </a>
           <a href="https://github.com/Abdul-Azeez060/WebPro">
