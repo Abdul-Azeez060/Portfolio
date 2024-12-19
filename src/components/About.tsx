@@ -81,9 +81,8 @@ export function About() {
     },
     {
       key: 6,
-      title: "Programming Languages",
-      description:
-        "Understand the impact of effective communication in our lives.",
+      title: "Tech Stack",
+      description: "Building new things",
       header: (
         <WordFadeIn
           className="text-blue-400  md:text-6xl lg:text-7xl   overflow-x-visible"
