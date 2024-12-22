@@ -103,9 +103,8 @@ export function About() {
     {
       key: 8,
       header: <ScrollBasedVelocityDemo />,
-      title: "The Power of Communication",
-      description:
-        "Understand the impact of effective communication in our lives.",
+      title: "Talking with a computer",
+      description: "",
       className: " md:col-span-6",
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
