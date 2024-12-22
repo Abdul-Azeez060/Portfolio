@@ -15,10 +15,9 @@ export function ShineBorderDemo() {
           <TypingAnimationDemo />
           <FormElement />
         </div>
-
-        <div className="w-full  col-span-12 md:col-span-5 flex flex-col justify-center align-middle">
-          <LinkedInCardDemo />
-        </div>
+      </div>
+      <div className="w-full  col-span-12 md:col-span-5 flex flex-col justify-center align-middle">
+        <LinkedInCardDemo />
       </div>
     </ShineBorder>
   );
