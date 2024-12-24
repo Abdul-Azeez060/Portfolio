@@ -4,8 +4,8 @@ import BannerImage from "@/../assets/Banner.jpeg";
 import CollgeImage from "@/../assets/collegeImage.jpeg";
 export function LinkedInCardDemo() {
   return (
-    <div className="w-full h-full border ">
-      <LinkedInCard
+    <div className="w-full border ">
+      <LinkedInCard 
         image={BannerImage}
         profileImage={ProfileImage}
         collegeImage={CollgeImage}

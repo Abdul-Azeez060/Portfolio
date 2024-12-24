@@ -36,9 +36,10 @@ export default {
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
+      sxl: "1150px",
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
-
+      s2xl: "1440px",
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },

@@ -3,10 +3,9 @@
 import React from "react";
 
 import { cn } from "@/lib/utils";
-import { StaticImageData } from "next/image";
 
 interface Avatar {
-  imageUrl?: string | StaticImageData;
+  imageUrl?: string;
   profileUrl?: string;
 }
 interface AvatarCirclesProps {
@@ -23,7 +22,7 @@ const AvatarCircles = ({
   return (
     <div
       className={cn(
-        "z-10 flex -space-x-1 md:-space-x-2 rtl:space-x-reverse",
+        "z-10 flex -space-x-2 js:-space-x-2  rtl:space-x-reverse",
         className
       )}>
       {avatarUrls.map((url, index) => (
@@ -34,7 +33,7 @@ const AvatarCircles = ({
           rel="noopener noreferrer">
           <img
             key={index}
-            className="h-4 w-4 md:h-6 md:w-6 rounded-full border-2 border-white dark:border-gray-800"
+            className="h-5 w-5 js:h-7 js:w-7 rounded-full border-2 border-white dark:border-gray-800"
             src={url.imageUrl as string}
             width={40}
             height={40}
