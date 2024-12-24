@@ -1,5 +1,5 @@
 "use client";
-import db from "../db";
+
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -29,11 +29,13 @@ export function FormElement() {
   async function onSubmit(values: z.infer<typeof UserInputSchema>) {
     console.log(values);
     try {
-    } catch (error) {}
-    await fetch("/api/usermessage", {
-      method: "POST",
-      body: JSON.stringify(values),
-    });
+      await fetch("/api/usermessage", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+    } catch (err) {
+      console.log(err);
+    }
   }
   const form = useForm<z.infer<typeof UserInputSchema>>({
     resolver: zodResolver(UserInputSchema),

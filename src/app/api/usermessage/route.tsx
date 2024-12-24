@@ -1,6 +1,5 @@
 import db from "@/db";
 import { NextRequest, NextResponse } from "next/server";
-import { UserInputSchema } from "@/components/FormElement";
 
 export async function POST(req: NextRequest) {
   try {

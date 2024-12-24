@@ -14,11 +14,7 @@ interface AvatarCirclesProps {
   avatarUrls: Avatar[];
 }
 
-const AvatarCircles = ({
-  numPeople,
-  className,
-  avatarUrls,
-}: AvatarCirclesProps) => {
+const AvatarCircles = ({ className, avatarUrls }: AvatarCirclesProps) => {
   return (
     <div
       className={cn(
