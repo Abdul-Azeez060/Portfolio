@@ -95,9 +95,7 @@ export function FormElement() {
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
-                This is your public display name.
-              </FormDescription>
+              <FormDescription>Thank you for your message.</FormDescription>
               <FormMessage />
             </FormItem>
           )}
