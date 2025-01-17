@@ -71,18 +71,24 @@ export function LinkedInCard({
               </div>
             </div>
             <div className="w-[25%]">
-              <div className=" flex ">
-                <div className="w-8 h-8 lg:w-10 lg:h-10  rounded-full">
-                  <Image src={collegeImage || ""} alt="CollegeImage" />
-                </div>
+              <div className="flex flex-col items-center justify-center">
+                <div className=" flex h-fit">
+                  <div className="w-8 h-4 lg:w-8  lg:h-8  rounded-full">
+                    <Image
+                      src={collegeImage || ""}
+                      alt="CollegeImage "
+                      className=""
+                    />
+                  </div>
 
-                <p className="leading-[0.4rem] text-[0.30rem] js:text-[0.6rem] js:leading-3 sm:text-[0.7rem] sm:leading-4 ">
-                  <a
-                    className="hover:text-[#2D64BC] hover:underline decoration-1  font-semibold w-full"
-                    href="https://www.linkedin.com/school/vitbhimavaram/posts/?feedView=all">
-                    Vishnu Institute of Technology (Autonomous)
-                  </a>
-                </p>
+                  <p className="leading-[0.4rem] text-[0.30rem] js:text-[0.6rem] js:leading-3 sm:text-[0.7rem] sm:leading-4 max-h-fit ">
+                    <a
+                      className="hover:text-[#2D64BC] hover:underline decoration-1  font-semibold w-full"
+                      href="https://www.linkedin.com/school/vitbhimavaram/posts/?feedView=all">
+                      Vishnu Institute of Technology (Autonomous)
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

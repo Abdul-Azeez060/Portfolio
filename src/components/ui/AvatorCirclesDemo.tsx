@@ -12,8 +12,10 @@ const avatars = [
     profileUrl: "https://www.linkedin.com/in/chakri-kottana-57a57725a/",
   },
   {
-    imageUrl: "https://avatars.githubusercontent.com/u/106103625",
-    profileUrl: "https://github.com/BankkRoll",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1660002772504?e=1737712800&v=beta&t=DkudJvLC_EiYK5Bgk7nPqfJXndXd0hyIh3bPZsbWHyE",
+    profileUrl:
+      "https://www.linkedin.com/in/sivaramteja-mamidisetty-717b6725a/",
   },
 ];
 
