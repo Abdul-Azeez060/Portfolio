@@ -53,7 +53,7 @@ export function LinkedInCard({
                 <a
                   className="hover:text-[#2D64BC] hover:underline decoration-1  font-semibold "
                   href="https://www.linkedin.com/mynetwork/invite-connect/connections/">
-                  250 connections
+                  500 connections
                 </a>
               </p>
               <div className="my-1 flex items-center">
@@ -65,7 +65,7 @@ export function LinkedInCard({
                     <span className="hover:text-[#2D64BC] text-slate-600 font-medium  ">
                       Madivada Prithvi, Chakri Kottana,
                     </span>{" "}
-                    and 248 other mutual connections
+                    and 500 other mutual connections
                   </a>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export function LinkedInCard({
             About
           </h2>
           <p className="leading-3 text-[0.50rem] js:text-[0.6rem] js:leading-3 sm:text-[0.7rem] sm:leading-4 ">
-            I am Abdul Azeez, I am in my 3rd year computer science engineering,
+            I am Abdul Azeez, I am in my 4th year computer science engineering,
             I build webites and deploy it to make our lives smother. Love to
             write blogs on hashnode and medium. Special love for Typescript,
             building backends, I work with React.js, Next.js, Express, AWS,

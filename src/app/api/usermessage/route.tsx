@@ -1,31 +1,33 @@
-import db from "@/db";
+import connectToDatabase from "@/db";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     console.log(body, "this is the body");
-    // const { success, error } = UserInputSchema.safeParse(body);
-    // console.log(success, "this is the validation");
-    // console.log(error);
-    // if (!success) {
-    //   return NextResponse.json({
-    //     success: false,
-    //     message: "validation error",
-    //   });
-    // }
-    // console.log(body, "this is the post request");
-    await db.userMessage.create({
-      data: body,
+
+    // Connect to MongoDB
+    const db = await connectToDatabase();
+
+    // Insert document into UserMessage collection
+    const result = await db.collection("UserMessage").insertOne({
+      ...body,
+      createdAt: new Date(),
+      updatedAt: new Date(),
     });
+
+    console.log(result, "this is the response from db");
+
     return NextResponse.json({
       success: true,
       message: "successfully added",
+      id: result.insertedId,
     });
   } catch (error) {
+    console.error("Error inserting user message:", error);
     return NextResponse.json({
       success: false,
-      message: error,
+      message: "Failed to save message",
     });
   }
 }

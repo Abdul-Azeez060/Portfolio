@@ -1,15 +1,26 @@
-import { PrismaClient } from "@prisma/client";
+import { MongoClient, Db } from "mongodb";
 
-const prismaClientSingleton = () => {
-  return new PrismaClient();
+const uri = process.env.MONGODB_URI || "mongodb://localhost:27017";
+const dbName = process.env.MONGODB_DB_NAME || "PortfolioOrg";
+
+let client: MongoClient;
+let db: Db;
+
+const connectToDatabase = async (): Promise<Db> => {
+  if (db) {
+    return db;
+  }
+
+  try {
+    client = new MongoClient(uri);
+    await client.connect();
+    db = client.db(dbName);
+    console.log("Connected to MongoDB");
+    return db;
+  } catch (error) {
+    console.error("Failed to connect to MongoDB:", error);
+    throw error;
+  }
 };
 
-declare const globalThis: {
-  prismaGlobal: ReturnType<typeof prismaClientSingleton>;
-} & typeof global;
-
-const prisma = globalThis.prismaGlobal ?? prismaClientSingleton();
-
-export default prisma;
-
-if (process.env.NODE_ENV !== "production") globalThis.prismaGlobal = prisma;
+export default connectToDatabase;
